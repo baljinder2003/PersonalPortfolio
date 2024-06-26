@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none
+}
+
+html body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden
+}
+
+html body #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(https://c4.wallpaperflare.com/wallpaper/726/754/357/kali-linux-kali-linux-nethunter-linux-unix-lenovo-hd-wallpaper-preview.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: inherit;
+    height: inherit
+}
+
+html body #navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0%;
+    width: 60%;
+    height: 60px;
+    background: rgba(255, 255, 255, .1333333333);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, .2666666667);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center
+}
+
+@media(orientation: portrait) {
+    html body #navbar {
+        width: 100%
+    }
+}
+
+html body #navbar div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+html body #navbar div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%
+}
+
+html body #navbar div img:hover {
+    height: 120%;
+    transform: translate(-50%, -30%)
+}
+
+html body #welcome-section {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4b7fcd;
+    text-align: center;
+    background: rgba(255, 255, 255, .1333333333);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 60%;
+    padding: 10px;
+    border-radius: 25px
+}
+
+html body #profile,
+html body #projects,
+html body #contact {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: auto;
+    padding: 20px 50px
+}
+
+html body #profile #image {
+    width: 640px;
+    height: 360px;
+    background: url(https://i.im.ge/2024/05/27/K7cyqS.Cream-Black-Minimalist-Professional-About-Me-Presentation-2.png) no-repeat;
+    background-size: 100% 100%
+}
+
+html body #projects #links {
+    width: 280px;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: justify
+}
+
+html body #projects #links a {
+    color: #000
+}
+
+html body #projects #links a:hover {
+    color: red;
+    font-weight: 900
+}
+
+html body #contact #Clinks {
+    display: flex;
+    flex-direction: column
+}
+
+html body #contact #Clinks .sites {
+    display: flex;
+    margin-top: 5px
+}
+
+html body #contact #Clinks .sites img {
+    height: 24px
+}
+
+html body #contact #Clinks .sites a {
+    margin-left: 10px;
+    font-size: 24px
+}
+
+.windows {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border-top: 20px solid rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 10px;
+    position: absolute
+}
+
+.windows .xxxcontainerxxx {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    height: 20px
+}
+
+.windows .xxxminimiseButtonxxx,
+.windows .xxxcrossButtonxxx,
+.windows .xxxrectangleButtonxxx {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.windows .xxxminimiseButtonxxx {
+    right: 60px
+}
+
+.windows .xxxcrossButtonxxx {
+    right: 10px
+}
+
+.windows .xxxrectangleButtonxxx {
+    right: 35px
+}
+
+.FSize {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100vw;
+    max-height: calc(100vh - 60px);
+    left: 0 !important;
+    top: 60px !important
+}
+
+.ZSize {
+    overflow: hidden !important;
+    width: 0px !important;
+    height: 0px !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important
+}
+
+.style1 {
+    border-style: solid;
+    border-width: 0px;
+    border-image-source: url(https://i.im.ge/2024/05/27/K7ccTX.Border1.png);
+    border-image-slice: 160;
+    border-image-width: 25px;
+    border-image-outset: 0px 6px;
+    border-image-repeat: revert
+}
+
+.style1 .xxxminimiseButtonxxx {
+    top: 21px;
+    right: 55px
+}
+
+.style1 .xxxcrossButtonxxx {
+    top: 21px;
+    right: 5px
+}
+
+.style1 .xxxrectangleButtonxxx {
+    top: 21px;
+    right: 30px
+}
+
+.style2 {
+    border-style: solid;
+    border-width: 0px;
+    border-image-source: url(https://lh3.googleusercontent.com/pw/AP1GczMIFYU-ymjtvICuIItY7fUj7Ffhxyuwvs5jf_ThoEdTEta_G54bXLsV_Adw-N5v_j4mcKqTTtPRHr6iN9dGSYS4Iuu-IPlG-8L39n5DKJ8Hs24QCdDnL6t5k2EB0JC0yLl7hykUv3I10_CEzA5FTTC__f7S9axrlxp86FaxFAuhQAltM32d7Kle8-2dsAHZAHGSOLWpbLx8iYpK-mLehx8AqUMD0XUi22cbA7K7r2n25gGO-5W4WbXAJ82PBZ9IFYaXFBRsC3_eedI1VHzqNHkGTTAzX1cGeoz9qRemXjbP4jA9OvvSIZwjEWCVsWkaqEsGPDCtVdckj3liunvqZgoUJZd57rV1m5L1dEtzuBCMUb5mL2lfeQOAGezR9Gxo7NLLEx3yHQyWkRMIebByxxyZK4mBXw_vulmr0VLhxOSgy6kw4s6MUbxrj3VZdj5MnbkEO1WQhy-T4YE3oy9gy51UCy0_jAEES7M2s2XCZNLDEko7iHpsyHTrXAAtuVYvnl1tgKOIqeSnWnS4f6QQh8JFfIe_zAuJFm1dRf0atJ4oCeR5VE2Lbnig7sBpqoYNCOMFDdHndVuFUm9976alvquCBy8dnIbYpOSMf3gFb2T113gSExIvcF4CabmeDwrlTuTrnxtYKY1j5ZFDu00yY_G4rbncDOYC0u0cR0hQ4DYloiguBxjQZ_RnBYog-_qB_sRj7NRELvj4qiYaHm8nbDZXgLf2uFCeWJ9QliEyhkhqtsd3oHvt-hhtvLQHvejtThpUYaLkEyJrm14NMaulGijp9zfrJ7hbXD7XjXmWQ6wmJhHjV8k_bur2gLYYqn0TEZqFL288S7ifKKkQ8-BL1UvQH3IdKZS_k9TqcuZFOxY2-LCfqH2R7rQL5gKeWq_hSmsxT4phL1vCXOuLBglP0jFCZYQUBvEiblo7_ZUN_AsyHyMHvIEjfbnuV1TM-avtg1_r81Lq_p01YUuRv5fg_03UwR0CeLCT=w630-h618-s-no-gm?authuser=0);
+    border-image-slice: 130 180 130 180;
+    border-image-width: 80px;
+    border-image-outset: 20px 20px 22px 20px;
+    border-image-repeat: revert;
+    padding: 60px !important
+}
+
+.style2 .xxxminimiseButtonxxx {
+    top: 21px;
+    right: 55px
+}
+
+.style2 .xxxcrossButtonxxx {
+    top: 21px;
+    right: 5px
+}
+
+.style2 .xxxrectangleButtonxxx {
+    top: 21px;
+    right: 30px
+}
